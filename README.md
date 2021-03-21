@@ -1,6 +1,8 @@
 # WebProject-MidTerm
 
-**Gunduzalp Dogrutekin COM-19**
+- Name: Gunduzalp Dogrutekin
+- Contact: gunduzalp.dogrutekin@iaau.edu.kg
+- Computer Science Department of Ala-too International University.
 
 ## Porject Description
 
