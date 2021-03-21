@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <title>WebProject-Alatoo</title>
+</head>
+<body style="background-color: whitesmoke;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-success">
+        <img src ="https://upload.wikimedia.org/wikipedia/en/0/07/Ala-Too_International_University_Seal.png" style="width:100px;height:100px;">
+        <a class="navbar-brand" href="#">Ala-Too Student Information</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"> Main page <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"data-toggle="modal" data-target="#addDatalar">Add Info</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/aboutapi">AboutAPI</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <h2 style = "font-family:Georgia,ser;font-size:45px;font-style:oblique; text-align: center;">Short Description</h2>
+    <div class="container" style="font-family: Verdana,SansSerif; font-size: 14px;font-style: normal" >
+        <p>
+            This web application is coded to store the data of the students.As we all know students all have individual data
+            which are different from one another.
+        <br> So, I codded a web application to store the data of students by using their first name, last name, email address and their particular faculties.
+            <br> The table below shows the stored data. In the Navigation bar above you can add your information
+            and you can check how I have used API in this web application.More descriptioon are in github read.me.
+
+
+        </p>
+    </div>
+    <img align="right"  src ="https://pms.alatoo.edu.kg/images/logo_text.png" style="width:500px;height:100px;">
+    <br>
+    <br>
+    <br>
+    <h2 style = "font-family:Georgia,ser;font-size:45px;font-style:oblique; text-align: center;">The Data Table</h2>
+    <div class ="container my-2"></div>
+    <table class ="table table-stripped table-responsive-md" cellspacing="1"  border="2" bordercolor="#000000" background="bg.gif">
+        <thead>
+            <tr>
+                <th>FirsttName</th>
+                <th>LastName</th>
+                <th>Email</th>
+                <th>Faculty</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr th:each = "user: ${datalar}">
+            <td th:text="${user.firstname}"></td>
+            <td th:text="${user.lastname}"></td>
+            <td th:text="${user.email}"></td>
+            <td th:text="${user.faculty}"></td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="modal fade" id="addDatalar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModelLabel">Add Student Information</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form name="datalarForm">
+
+                        <div class="form-group">
+                            <label for="firstname">FirstName:</label>
+                            <input type="text" class="form-control" id="firstname" placeholder="Enter First Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname">LastName</label>
+                            <input type="text" class="form-control" id="lastname" placeholder="Enter Last Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="faculty">Faculty</label>
+                            <input type="text" class="form-control" id="faculty" placeholder="Enter Faculty">
+                        </div>
+                        <button type="submit" class="btn btn-primary" onclick="sendData()">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    ...
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function sendData() {
+
+            $.ajax({
+                type: "Post",
+                url: "/datalar/add",
+                data: JSON.stringify({"firstname":$("#firstname").val(),"lastname":$("#lastname").val(),"email":$("#email").val(),"faculty":$("#faculty").val()}),
+                success: function () {
+                    console.log("OK")
+                },
+                dataType: "json",
+                contentType: "application/json"
+            })
+        }
+    </script>
+</body>
+</html>
