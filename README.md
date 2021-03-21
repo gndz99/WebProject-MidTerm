@@ -1,6 +1,6 @@
 # WebProject-MidTerm
 
-**Gunduzalp Dogrutekin**
+**Gunduzalp Dogrutekin COM-19**
 
 ## Porject Description
 
