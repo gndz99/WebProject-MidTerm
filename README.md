@@ -10,6 +10,8 @@ It is a sample representetive web application for Ala-Too International Univeris
 
 This web applciation uses Heroku as its storage cloud service and the link:
 > Link: [Web-Page](https://alatooweb204.herokuapp.com)
+> 
+Please add your information if you have clicked the link and read the about API page which is inside the Nav-Bar
 
 ### Below are some screen shots from the web-application:
 ## Main Page and Navbar
