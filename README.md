@@ -24,6 +24,10 @@ So the main page consists of a big data table above it there is a short descript
 The Nav-Bar consists of a Home page return button, an add inforamtion button where data is added, an Ala-Too University Logo and a button called 
 About API where the information is about how API is been used.
 
+***ABOUT API Page***
+
+<img src="https://user-images.githubusercontent.com/65071516/111916532-9e990f00-8aa5-11eb-8893-180805c1cec2.PNG">
+
 ## Database
 
 The database used is PGADMIN4 and POSTGRESQL13
