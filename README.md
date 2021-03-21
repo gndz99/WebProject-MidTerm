@@ -46,5 +46,52 @@ The data is posted to the server
 
 <img src="https://user-images.githubusercontent.com/65071516/111915452-8d99cf00-8aa0-11eb-9c44-0a85bce1e4b3.PNG">
 
+***GET***
+
+To view the particular id("/datalar/id")
+
+The code
+
+<img src="https://user-images.githubusercontent.com/65071516/111915590-47913b00-8aa1-11eb-8969-55894997fb48.PNG">
+
+The individual id shown:
+
+<img src="https://user-images.githubusercontent.com/65071516/111915452-8d99cf00-8aa0-11eb-9c44-0a85bce1e4b3.PNG">
+
+***PUT***
+
+To change the id's data("/datalar/id")
+
+The code:
+
+<img src="https://user-images.githubusercontent.com/65071516/111915668-aa82d200-8aa1-11eb-928e-db9b03facfbb.PNG">
+
+The process:
+
+<img src="https://user-images.githubusercontent.com/65071516/111915676-ae165900-8aa1-11eb-879e-9e8245898a7f.PNG">
+
+The change in id 1:
+
+<img src="https://user-images.githubusercontent.com/65071516/111915680-afe01c80-8aa1-11eb-8167-6427eb6c237a.PNG">
+
+***DELETE***
+
+To delete particular id ("/datalar/id")
+
+The code:
+
+<img src="https://user-images.githubusercontent.com/65071516/111915853-7360f080-8aa2-11eb-9887-f7ae63640988.PNG">
+
+The deleting process:
+
+<img src="https://user-images.githubusercontent.com/65071516/111915858-75c34a80-8aa2-11eb-8f34-6ead6e908a87.PNG">
+
+Id 1 has been deleted from the server:
+
+<img src="https://user-images.githubusercontent.com/65071516/111915861-778d0e00-8aa2-11eb-838a-4344bf44b075.PNG">
+
+
+
+
 
 
