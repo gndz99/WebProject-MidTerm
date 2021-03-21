@@ -9,4 +9,8 @@ This project is a data storing based web application which has a function of sto
 It is a sample representetive web application for Ala-Too International Univeristy
 
 This web applciation uses Heroku as its storage cloud service and the link:
-> Link: [Sample-Page](https://alatooweb204.herokuapp.com)
+> Link: [Web-Page](https://alatooweb204.herokuapp.com)
+
+### Below are some screen shots from the web-application;
+
+***The Navbar:*** 
