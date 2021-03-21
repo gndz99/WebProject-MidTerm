@@ -38,6 +38,8 @@ The database used is PGADMIN4 and POSTGRESQL13
 
 ## The REST API
 
+POST,PUT,DELETE is requested by an extension in Mozzila FireFox called HTTP request Maker.
+
 ***POST***
 
 Lets start from the first one which is POST.("/datalar/add")
