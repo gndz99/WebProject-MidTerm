@@ -1,4 +1,4 @@
-# WebProject-MidTerm
+# WebProject-Final
 
 - Name: Gunduzalp Dogrutekin
 - Contact: gunduzalp.dogrutekin@iaau.edu.kg
