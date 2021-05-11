@@ -4,7 +4,7 @@
 - Contact: gunduzalp.dogrutekin@iaau.edu.kg
 - Computer Science Department of Ala-too International University.
 
-## Porject Description
+## Project Description
 
 This project is a data storing and based web application which has a function of storing the data given. 
 
